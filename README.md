@@ -1,5 +1,6 @@
 # dotfiles
 
+```
            .-------------------------:                    riber@cachyos
           .+=========================.                    -------------
          :++===++==================-       :++-           OS: CachyOS x86_64
@@ -25,6 +26,7 @@
                                                           Local IP (wlan0): ***
                                                           Battery (Primary): 98% [AC Connected]
                                                           Locale: en_US.UTF-8
+```
 
 My notes and dotfiles for setting up my working computer as a developer.
 
