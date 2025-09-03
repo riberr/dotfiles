@@ -1,0 +1,74 @@
+// __        __          _                 
+// \ \      / /_ _ _   _| |__   __ _ _ __  
+//  \ \ /\ / / _` | | | | '_ \ / _` | '__| 
+//   \ V  V / (_| | |_| | |_) | (_| | |    
+//    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    
+//                 |___/                   
+//  
+// by Stephan Raabe (2023) 
+// ----------------------------------------------------- 
+//
+{
+    // General Settings
+    "layer": "top",
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,    
+    "spacing": 0,
+
+    // Load Modules
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+
+    // Pulseaudio
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}   {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+        "headphone": " ",
+        "hands-free": " ",
+        "headset": " ",
+        "phone": " ",
+        "portable": " ",
+        "car": " ",
+        "default": [" ", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    // Modules Left
+    "modules-left": [
+        "custom/appmenuicon",
+        "niri/workspaces",
+        "custom/empty"
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "niri/window",
+        "custom/empty"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+		"cpu",
+        "memory",
+        "pulseaudio",
+        //"backlight",
+        //"bluetooth",
+        "network",
+        "custom/vpn",
+        "battery", 
+        "power-profiles-daemon",
+        "custom/exit",
+        "clock",
+        "tray"
+        //"custom/notification",
+    ]
+}
